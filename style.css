@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body{
+    background-color:  hsl(217, 28%, 15%);
+    font-size: 14px;
+}
+
+nav{
+    margin: 20px 5px 0px 5px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif; 
+}
+nav ul{
+    list-style: none;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+nav li{
+    display: inline-block;
+    padding-right: 20px;
+    opacity: 70%;
+    font-size: small;
+}
+nav li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+nav li:hover{
+    opacity: 100%;
+    text-decoration: underline;
+    
+
+}
