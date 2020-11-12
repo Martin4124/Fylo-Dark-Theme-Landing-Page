@@ -39,6 +39,7 @@ header{
     text-align: center;
     color: hsl(0, 0%, 100%); 
     font-family: var(--Raleway);
+    margin: 0 auto;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -49,4 +50,15 @@ header p{
 header button{
     font-family: var(--OpenSans);
     color:  hsl(0, 0%, 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    width: 15em;
+    border-radius: 20px;
+    background: linear-gradient(to right, hsl(176, 68%, 64%),  hsl(198, 60%, 50%) );
+    border: none;
+    text-align: center;
+}
+header button:hover{
+    background:  hsl(176, 68%, 70%);
 }
