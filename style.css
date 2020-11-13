@@ -80,7 +80,11 @@ header button:hover{
 .sections2{
     font-family: var(--OpenSans);
     color: white;
-    margin: 150px 20px 100px 20px;
+    margin-top: 150px ;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 } 
 .sections2 h2{
     font-family: var(--Raleway);
@@ -99,4 +103,43 @@ header button:hover{
     color: white;
     border-bottom: white solid 2px;
 }
+.line-height{
+    line-height: 1.6;
+}
+.background-image{
+    background: url(images/bg-quotes.png) 35px 15px;
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.grid-areas{
+    color: white;
+    font-family: var(--OpenSans);
+    font-size: 12px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.grid-helper{
+    margin: 0 auto;
+    width: 300px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.grid-areas img{
+    float: left;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.grid-areas h4{
+    margin-bottom: 1.6px;
+}
+.grid-areas p{
+    opacity: .7;
+}
+.opacity{
+    opacity: .7;
+}
+
 
