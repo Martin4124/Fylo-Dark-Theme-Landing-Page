@@ -7,11 +7,12 @@
 body{
     background-color:  hsl(218, 28%, 13%);
     font-size: 14px;
+    margin:0;
     
 }
 
 nav{
-    margin: 20px 5px 40px 5px;
+    margin: 20px 5px 40px 10px;
     color: hsl(0, 0%, 100%);
     font-family: var(--Raleway); 
 }
@@ -65,6 +66,7 @@ header button:hover{
 .icons{
     height: 70px;
 }
+
 .sections{
     text-align: center;
     font-family: var(--OpenSans);
@@ -77,13 +79,16 @@ header button:hover{
 .sections p{
     opacity: 0.7;
 }
+.margin0{
+    margin: 0 auto;
+    margin-top: 150px ;
+    margin-bottom: 100px;
+    width: 320px;
+
+}
 .sections2{
     font-family: var(--OpenSans);
     color: white;
-    margin-top: 150px ;
-    margin-bottom: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
 
 } 
 .sections2 h2{
@@ -141,5 +146,18 @@ header button:hover{
 .opacity{
     opacity: .7;
 }
+aside{
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+footer{
+    background-color: hsl(216, 53%, 9%);
+    
+
+}
+
 
 
