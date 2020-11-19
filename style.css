@@ -7,7 +7,7 @@
 body{
     background-color:  hsl(218, 28%, 13%);
     font-size: 14px;
-    margin:0;
+    margin: 0;
     
 }
 
@@ -81,7 +81,6 @@ header button:hover{
 }
 .margin0{
     margin: 0 auto;
-    margin-top: 150px ;
     margin-bottom: 100px;
     width: 320px;
 
@@ -151,12 +150,91 @@ aside{
     border-radius: 5px;
     color: white;
     text-align: center;
-    position: relative;
+    
+}
+.aside_content{
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+aside h3{
+    font-family: var(--Raleway);
+}
+aside p{
+    font-family: var(--OpenSans);
+}
+#button{
+    font-family: var(--OpenSans);
+    color:  hsl(0, 0%, 100%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 20em;
+    border-radius: 20px;
+    background: linear-gradient(to right, hsl(176, 68%, 50%),  hsl(198, 60%, 50%) );
+    border: none;
+    text-align: center;
+    font-weight: 500;
+}
+#button:hover{
+    background:  hsl(176, 68%, 70%);
+}
+#text{
+    margin-top: 20px;
+    font-family: var(--OpenSans);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 20em;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+input::placeholder{
+    padding-left: 20px;
 }
 footer{
     background-color: hsl(216, 53%, 9%);
-    
-
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: white;
+    font-family: var(--OpenSans);
+}
+footer ul{
+    list-style: none;
+    margin-left: -40px;
+    line-height: 2.5;
+}
+footer img{
+    margin-bottom: 30px;
+}
+footer p{
+    margin-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    font-weight: bold;
+}
+.footer_content{
+    padding: 20px;
+}
+#position::before{
+    content: url(images/icon-location.svg);
+    float: left;
+    margin-right: 25px;
+    padding-bottom: 30px;
+}
+#phone::before{
+    content: url(images/icon-phone.svg) ;
+    float: left;
+    margin-right: 20px;
+}
+#mail::before{
+    content: url(images/icon-email.svg);
+    float: left;
+    margin-right: 20px;
 }
 
 
