@@ -150,6 +150,11 @@ aside{
     border-radius: 5px;
     color: white;
     text-align: center;
+    margin-top: -80px;
+    margin-bottom:-100px;
+    position: relative;
+    top: 150px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     
 }
 .aside_content{
@@ -191,10 +196,11 @@ aside p{
 }
 input::placeholder{
     padding-left: 20px;
+    opacity: .7;
 }
 footer{
     background-color: hsl(216, 53%, 9%);
-    padding-top: 100px;
+    padding-top: 240px;
     padding-bottom: 50px;
     color: white;
     font-family: var(--OpenSans);
@@ -235,6 +241,19 @@ footer a:hover{
     content: url(images/icon-email.svg);
     float: left;
     margin-right: 20px;
+}
+
+.svg-white{
+    border-radius: 50%;
+    border: solid white 1px;
+    padding: 5px;
+    width: 15px;
+}
+.svg-white:hover{
+    
+}
+.svg{
+    text-align: center;
 }
 
 
