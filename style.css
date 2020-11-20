@@ -200,7 +200,7 @@ input::placeholder{
 }
 footer{
     background-color: hsl(216, 53%, 9%);
-    padding-top: 240px;
+    padding-top: 200px;
     padding-bottom: 50px;
     color: white;
     font-family: var(--OpenSans);
@@ -242,19 +242,77 @@ footer a:hover{
     float: left;
     margin-right: 20px;
 }
-
-.svg-white{
-    border-radius: 50%;
-    border: solid white 1px;
-    padding: 5px;
-    width: 15px;
-}
-.svg-white:hover{
+.footer_icons{
+    display: flex;
+    align-items:  flex-start;
+    justify-content: center;
     
 }
-.svg{
-    text-align: center;
+#facebook{
+    background: url(images/401-facebook.svg);
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background-size: 15px;
+    border-radius: 50%;
+    border: solid white 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
 }
-
+#twitter{
+    background: url(images/407-twitter.svg);
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background-size: 15px;
+    border-radius: 50%;
+    border: solid white 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+#instagram{
+    background: url(images/403-instagram.svg);
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background-size: 15px;
+    border-radius: 50%;
+    border: solid white 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+#facebook:hover{
+    background: url(images/401,5-facebook.svg);
+    border: solid hsl(176, 68%, 64%) 1px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background-size: 15px;
+}
+#twitter:hover{
+    background: url(images/407,5-twitter.svg);
+    border: solid hsl(176, 68%, 64%) 1px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background-size: 15px;
+}
+#instagram:hover{
+    background: url(images/403,5-instagram.svg);
+    border: solid hsl(176, 68%, 64%) 1px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background-size: 15px;
+}
 
 
