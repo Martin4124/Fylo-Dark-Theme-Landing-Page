@@ -7,20 +7,27 @@
 body{
     background-color:  hsl(218, 28%, 13%);
     font-size: 14px;
-    margin: 0;
+    margin: 0; 
+}
+.nav-item{
+    max-width:1700px;
+    margin: 0 auto;
+}
+nav{
+    padding: 20px 10px 0px 10px;
+    color: hsl(0, 0%, 100%);
+    font-family: var(--Raleway);
+    display: flex; 
+    justify-content: space-between;
     
 }
 
-nav{
-    margin: 20px 5px 40px 10px;
-    color: hsl(0, 0%, 100%);
-    font-family: var(--Raleway); 
-}
 nav ul{
     list-style: none;
-    position: absolute;
-    right: 5px;
-    top: 10px;
+    position: relative;
+    bottom: 20px;
+    text-align: right;
+    
 }
 nav li{
     display: inline-block;
@@ -41,8 +48,6 @@ header{
     color: hsl(0, 0%, 100%); 
     font-family: var(--Raleway);
     margin: 0 auto;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 header p{
     font-family: var(--OpenSans);
@@ -66,12 +71,34 @@ header button:hover{
 .icons{
     height: 70px;
 }
-
+.grid-Features{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "access" "security"
+    "collaboration" "anyfile";
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.grid_acces{
+    grid-area: access;
+}
+.grid_security{
+    grid-area: security;
+}
+.grid_collaboration{
+    grid-area: collaboration;
+}
+.grid_anyfile{
+    grid-area: anyfile;
+}
 .sections{
     text-align: center;
     font-family: var(--OpenSans);
     color: white;
     margin: 0px 20px 100px 20px;
+    
 }
 .sections h2{
     font-family: var(--Raleway);
@@ -79,29 +106,56 @@ header button:hover{
 .sections p{
     opacity: 0.7;
 }
-.margin0{
-    margin: 0 auto;
-    margin-bottom: 100px;
-    width: 320px;
-
-}
 .sections2{
     font-family: var(--OpenSans);
     color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% ;
+    grid-row-gap: 30px;
+    grid-template-areas: 
+    "img" "text";
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+
 
 } 
 .sections2 h2{
     font-family: var(--Raleway);
     font-size: 18px;
+    
+} 
+.sections2_img{
+    grid-area: img;
+    margin: 0 auto;
 } 
 .sections2 #img{
-    margin-bottom: 30px;
-} 
+    width: 100%;
+}
+.sections2_text{
+    grid-area: text;
+}
 .sections2 a{
     color: hsl(176, 68%, 64%);
     text-decoration: none;
     border-bottom:  hsl(176, 68%, 64%) solid 2px;
-
+}
+.sections2 a::after{
+    content: "";
+    background: url(images/icon-arrow.svg);
+    padding: 10px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.sections2 a:hover::after{
+    content: "";
+    background: url(images/icon-arrow-hover.svg);
+    padding: 10px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-position:center;
 }
 .sections2 a:hover{
     color: white;
@@ -116,7 +170,7 @@ header button:hover{
     background-repeat: no-repeat;
     background-size: 20px;
 }
-.grid-areas{
+.grid-Satish, .grid-Iva, .grid-Bruce{
     color: white;
     font-family: var(--OpenSans);
     font-size: 12px;
@@ -130,20 +184,26 @@ header button:hover{
     background-color: hsl(219, 30%, 18%);
     border-radius: 5px;
     margin-bottom: 30px;
+    display: grid;
 }
-.grid-areas img{
+.grid-helper img{
     float: left;
     border-radius: 100%;
     margin-right: 10px;
 }
-.grid-areas h4{
+.grid-helper h4{
     margin-bottom: 1.6px;
 }
-.grid-areas p{
+.grid-helper p{
     opacity: .7;
 }
 .opacity{
     opacity: .7;
+}
+.EarlyAccess{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 320px;
 }
 aside{
     background-color: hsl(217, 28%, 15%);
@@ -193,6 +253,10 @@ aside p{
     border-radius: 20px;
     margin-bottom: 20px;
     border: none;
+    
+}
+#text:focus{
+    outline: none;
 }
 input::placeholder{
     padding-left: 20px;
@@ -212,6 +276,7 @@ footer ul{
 }
 footer img{
     margin-bottom: 30px;
+    grid-area: img;
 }
 footer p{
     margin-bottom: 20px;
@@ -225,6 +290,21 @@ footer a:hover{
 }
 .footer_content{
     padding: 20px;
+    display: grid;
+    grid-template-areas:
+    "img" "location" "phone" "about" "contact" "icons";
+}
+.location_grid{
+    grid-area: location;
+}
+.phone_grid{
+    grid-area: phone;
+}
+.about_grid{
+    grid-area: about;
+}
+.contact_grid{
+    grid-area: contact;
 }
 #position::before{
     content: url(images/icon-location.svg);
@@ -242,10 +322,11 @@ footer a:hover{
     float: left;
     margin-right: 20px;
 }
-.footer_icons{
+.grid_icons{
     display: flex;
     align-items:  flex-start;
     justify-content: center;
+    grid-area: icons;
     
 }
 #facebook{
@@ -313,6 +394,83 @@ footer a:hover{
     height: 15px;
     padding: 5px;
     background-size: 15px;
+}
+
+@media only screen and (min-width: 500px){
+    body{
+        font-size: 15px;
+    }
+    nav{
+        padding: 30px 15px 0px 15px;
+    }
+    nav img{
+        height: 30px;
+
+    }
+    header{
+        padding-top: 10px;
+        width: 90%;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+    header button{
+        width: 17em;
+    }
+    .sections{
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .margin0{
+        width: 400px;
+    }
+    .sections2 #img{
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    .background-image{
+        background-position: 110px 10px;
+        background-size: 30px;
+    }
+    .grid-Satish, .grid-Bruce, .grid-Iva{
+        font-size: 13px;
+    }
+    .grid-helper{
+        width: 350px;
+    }
+}
+@media only screen and (min-width: 800px){
+    body{
+        font-size: 16px;
+    }
+    nav li{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    nav img{
+        height: 40px;
+    }
+    header{
+        width: 80%;
+    }
+    .grid-Features{
+        grid-template-columns: 50%;
+        grid-template-rows: 50%;
+        grid-template-areas: 
+        "acces security"
+        "collaboration anyfile";
+    }
+    .sections2{
+        grid-template-columns: 50%;
+        grid-template-rows: 1fr ;
+        grid-template-areas: 
+        "img text";
+    }
+    .sections2 h2{
+        font-size: 20px;
+    }
 }
 
 
