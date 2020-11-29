@@ -325,6 +325,9 @@ footer a:hover{
 .contact_grid{
     grid-area: contact;
 }
+#position{
+    max-width: 500px;
+}
 #position::before{
     content: url(images/icon-location.svg);
     float: left;
@@ -532,12 +535,18 @@ footer a:hover{
         grid-template-rows: 100px 100px 200px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-        "img img" "location phone" "about contact";
+        "img img" "location phone" "about contact" "icons icons";
         grid-column-gap: 100px;
     }
+    #position::before{
+        content: url(images/icon-location.svg);
+        float: left;
+        margin-right: 25px;
+        padding-bottom: 60px;
     
 }
 @media only screen and (min-width: 1200px){
+
     #Teams{
         margin: 0 auto;
         display: grid;
@@ -551,6 +560,19 @@ footer a:hover{
     .EarlyAccess{
         width: 800px;
     }
+    .footer_content{
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 400px 200px 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-template-areas:
+        "img img img img img" "location phone about contact icons";
+        grid-column-gap: 100px;
+    }
+    #position::before{
+        content: url(images/icon-location.svg);
+        float: left;
+        margin-right: 25px;
+        padding-bottom: 70px;
 }
 
 
